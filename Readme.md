@@ -1,264 +1,111 @@
-\# Shopping Trends and Customer Purchase Analysis
+# 📊 Shopping Trends & Customer Purchase Analysis
 
+> **A Data Analytics Project using Python, Pandas, Matplotlib & Google Colab**
 
+An end-to-end data analytics project that explores **3,900 customer purchase records** to identify patterns in product demand, customer demographics, payment preferences, subscription behavior, discount usage, and purchase frequency.
 
-\## Project Overview
+The project demonstrates the complete analytics workflow — from **data preparation and exploratory analysis to visualization, insight generation, and documentation**.
 
+---
 
+## 🔎 Project Overview
 
-This project analyzes a Shopping Trends dataset containing 3,900 customer purchase records and 18 attributes. The objective is to identify patterns in customer purchases, product categories, payment methods, demographics, subscription status, discount usage, and purchase frequency.
+Understanding customer purchasing behavior can help businesses identify product demand, customer segments, payment preferences, and purchasing patterns.
 
+This project analyzes a **Shopping Trends dataset containing 3,900 records and 18 original attributes**. The data was cleaned and analyzed using Python, with visualizations created using Matplotlib.
 
+The analysis focuses on:
 
-Python and Pandas were used for data preparation and analysis, Matplotlib was used for visualization, and Google Colab was used as the development environment.
+* 🛍️ Product and category performance
+* 👥 Customer demographics
+* 💳 Payment method preferences
+* 🔄 Purchase frequency
+* ⭐ Customer ratings
+* 🎫 Discount usage
+* 🔔 Subscription status
+* 📈 Overall purchase patterns
 
+---
 
+## 🎯 Project Objectives
 
-\## Objectives
+* Prepare and clean the dataset for analysis.
+* Understand overall customer purchase behavior.
+* Identify high-performing product categories and individual products.
+* Analyze purchasing patterns across age groups and genders.
+* Examine customer payment preferences.
+* Compare subscribed and non-subscribed customer records.
+* Analyze purchase records with and without discounts.
+* Identify common purchase-frequency patterns.
+* Create meaningful visualizations.
+* Derive descriptive, business-oriented insights from the data.
 
+---
 
+## 🗂️ Dataset
 
-\* Analyze customer purchase behavior.
+**Dataset:** Shopping Trends Dataset
 
-\* Identify high-performing product categories and products.
+| Attribute        | Value |
+| ---------------- | ----: |
+| Customer Records | 3,900 |
+| Original Columns |    18 |
+| Missing Values   |     0 |
+| Duplicate Rows   |     0 |
 
-\* Examine customer demographics and purchase patterns.
+### Key Data Categories
 
-\* Analyze payment method preferences.
+The dataset contains information about:
 
-\* Compare subscribed and non-subscribed customers.
+* Customer demographics
+* Products and categories
+* Purchase amounts
+* Locations
+* Sizes and colors
+* Seasons
+* Review ratings
+* Subscription status
+* Payment methods
+* Shipping types
+* Discounts and promotional codes
+* Previous purchases
+* Purchase frequency
 
-\* Analyze purchase records with and without discounts.
+---
 
-\* Examine purchase frequency patterns.
+## 🛠️ Technologies & Tools
 
-\* Create meaningful visualizations and derive descriptive insights.
+| Technology         | Purpose                                       |
+| ------------------ | --------------------------------------------- |
+| **Python**         | Data analysis and processing                  |
+| **Pandas**         | Data cleaning, transformation and aggregation |
+| **Matplotlib**     | Data visualization                            |
+| **Google Colab**   | Development environment                       |
+| **Google Sheets**  | Dataset access                                |
+| **GitHub**         | Project versioning and documentation          |
+| **Microsoft Word** | Project report preparation                    |
 
+---
 
+## 🧹 Data Preparation
 
-\## Dataset
+The dataset was prepared before performing the analysis.
 
+### Steps performed
 
+1. Loaded the dataset into Python.
+2. Inspected the dataset structure and dimensions.
+3. Checked data types.
+4. Converted important numerical fields to appropriate numeric types.
+5. Checked for missing values.
+6. Checked for duplicate records.
+7. Standardized purchase-frequency categories.
+8. Created age groups for demographic analysis.
+9. Prepared the cleaned dataset for exploratory analysis and visualization.
 
-\*\*Dataset:\*\* Shopping Trends Dataset
+### Data Quality Result
 
+After preparation:
 
-
-\*\*Records:\*\* 3,900
-
-
-
-\*\*Original attributes:\*\* 18
-
-
-
-The dataset contains information about customer demographics, products, purchase amounts, categories, payment methods, discounts, subscriptions, ratings, previous purchases, and purchase frequency.
-
-
-
-\## Tools and Technologies
-
-
-
-\* Python
-
-\* Pandas
-
-\* Matplotlib
-
-\* Google Colab
-
-\* Google Sheets
-
-\* Microsoft Word
-
-\* GitHub
-
-
-
-\## Data Cleaning
-
-
-
-The following preparation steps were performed:
-
-
-
-1\. Loaded the dataset into Python.
-
-2\. Inspected the dataset structure and data types.
-
-3\. Converted important numerical columns into numeric data types.
-
-4\. Checked for missing values.
-
-5\. Checked for duplicate records.
-
-6\. Standardized purchase-frequency categories.
-
-7\. Created age groups for demographic analysis.
-
-8\. Prepared the cleaned dataset for analysis and visualization.
-
-
-
-The final dataset contained 3,900 records with no missing values and no duplicate rows.
-
-
-
-\## Analysis Performed
-
-
-
-The project includes analysis of:
-
-
-
-\* Overall purchase performance
-
-\* Product category performance
-
-\* Top 10 products
-
-\* Payment methods
-
-\* Subscription status
-
-\* Discount usage
-
-\* Age groups
-
-\* Gender
-
-\* Purchase frequency
-
-
-
-\## Key Findings
-
-
-
-\* Total purchase amount: \*\*$233,081\*\*
-
-\* Average purchase amount: \*\*$59.76\*\*
-
-\* Average review rating: \*\*3.75\*\*
-
-\* Clothing recorded the highest total purchase amount at \*\*$104,264\*\*.
-
-\* Footwear recorded the highest average purchase amount at approximately \*\*$60.26\*\*.
-
-\* Blouse recorded the highest total purchase amount among individual products at \*\*$10,410\*\*.
-
-\* PayPal was the most frequently recorded payment method with \*\*677 records\*\*.
-
-\* The 56–70 age group had the highest total purchase amount at \*\*$65,256\*\*.
-
-\* The 18–25 age group had the highest average purchase amount at approximately \*\*$60.65\*\*.
-
-\* Quarterly was the most frequently recorded purchase frequency with \*\*1,147 records\*\*.
-
-
-
-These findings describe patterns observed in the dataset and should not be interpreted as causal relationships.
-
-
-
-\## Project Structure
-
-
-
-```text
-
-Shopping\_Trends\_Project/
-
-│
-
-├── shopping\_trends\_updated.csv
-
-├── PrashithaK\_ShoppingTrendsAnalysis.ipynb
-
-├── PrashithaK\_ShoppingTrends\_ProjectReport.docx
-
-├── README.md
-
-├── requirements.txt
-
-└── Shopping\_Trends\_Analysis.xlsx
-
-```
-
-
-
-\## How to Run the Project
-
-
-
-1\. Open the Google Colab notebook.
-
-2\. Upload or connect the Shopping Trends dataset.
-
-3\. Run the notebook cells in order.
-
-4\. The notebook performs data preparation, analysis, and visualization.
-
-5\. The resulting analysis can be reviewed along with the project report.
-
-
-
-\## Limitations
-
-
-
-\* The dataset does not contain transaction dates, so time-series analysis cannot be performed.
-
-\* Customer IDs are unique, limiting repeated-transaction analysis.
-
-\* The analysis is descriptive and does not establish causal relationships.
-
-\* Additional information such as income, campaign details, discount percentage, and transaction dates could support deeper analysis.
-
-\* The dataset appears structured/simulated, so the findings should not automatically be generalized to real-world retail populations.
-
-
-
-\## Future Scope
-
-
-
-Future improvements could include:
-
-
-
-\* Adding transaction dates for time-series analysis.
-
-\* Building interactive dashboards using Power BI or Tableau.
-
-\* Performing customer segmentation.
-
-\* Developing predictive models.
-
-\* Analyzing discount and marketing campaign effectiveness.
-
-\* Adding additional customer attributes.
-
-\* Performing sentiment analysis if textual customer reviews are available.
-
-
-
-\## Author
-
-
-
-\*\*Prashitha K\*\*
-
-
-
-B.E. Electronics and Communication Engineering
-
-Project Area: Data Analytics
-
-2026
-
-
-
+* **3,900 records** were retained.
+* **18 or**
